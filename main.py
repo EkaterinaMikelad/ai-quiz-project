@@ -51,7 +51,7 @@ async def get_db():
 # Официальный базовый URL для интеграции с DeepSeek API
 ai_client = AsyncOpenAI(
     api_key=os.getenv("DEEPSEEK_API_KEY", "sk-862f7ab763da4e30b734838515604500"),
-    base_url="https://deepseek.com"
+    base_url="https://api.deepseek.com/v1"
 )
 
 class AIAnswer(BaseModel):
